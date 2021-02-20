@@ -27,9 +27,9 @@ function App() {
    let inputValue= Number(document.querySelector('input[type="text"]').value);
    setCount(count +inputValue);
 
-   useEffect(()=>{
-    document.querySelector('input[type="text"]').value=count;
-   })
+  //  useEffect(()=>{
+  //   document.querySelector('input[type="text"]').value=count;
+  //  })
   //  clear();
   //  await (function(){
   //   return new Promise(res=>{
@@ -63,8 +63,8 @@ function Total(){
       <input type="text" placeholder='0' onChange={Total} disabled/>
       <button onClick={Add}>+</button>
       <button onClick={Minus}>-</button>
-      <Counter onClick={click}/>
-      {/* <div>
+      {/* <Counter onClick={click}/> */}
+      <div>
         <button style={{color:'red'}} value='1' onClick={click}>1</button>
         <button style={{color:'red'}} value='2' onClick={click}>2</button>
         <button style={{color:'red'}} value='3' onClick={click}>3</button>
@@ -75,7 +75,7 @@ function Total(){
         <button style={{color:'red'}} value='8' onClick={click}>8</button>
         <button style={{color:'red'}} value='9' onClick={click}>9</button>
         <button style={{color:'red'}} value='0' onClick={click}>0</button>
-      </div> */}
+      </div>
     </div>
   );
 }
